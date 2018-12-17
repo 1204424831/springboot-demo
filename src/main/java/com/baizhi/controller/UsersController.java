@@ -17,7 +17,8 @@ public class UsersController {
 
     @RequestMapping("/query")
     public String test(HttpSession session) {
-        System.out.println("11");
+        System.out.println("11111");
+        System.out.println("11122");
         List<User> list = userMapper.selectAll();
         session.setAttribute("list", list);
         System.out.println(list);
