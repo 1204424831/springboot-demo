@@ -18,7 +18,6 @@ public class UsersController {
     @RequestMapping("/query")
     public String test(HttpSession session) {
 
-
         List<User> list = userMapper.selectAll();
         session.setAttribute("list", list);
         System.out.println(list);
